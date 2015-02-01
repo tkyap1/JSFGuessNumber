@@ -31,7 +31,7 @@ public class UserNumberBean implements Serializable {
 
 	public String getResponse() {
 		if ((userNumber != null) && (userNumber.compareTo(randomInt) == 0)) {
-			return "Yay! You got it bro!";
+			return "Yay! You got it brother!";
 		} else {
 			return "Sorry, " + userNumber + " is incorrect.";
 		}
