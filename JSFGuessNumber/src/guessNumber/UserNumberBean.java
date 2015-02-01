@@ -13,7 +13,7 @@ public class UserNumberBean implements Serializable {
 	Integer userNumber = null;
 	String response = null;
 	private long minimum = 0;
-	private long maximum = 10;
+	private long maximum = 20;
 
 	public UserNumberBean() {
 		Random randomGR = new Random();
