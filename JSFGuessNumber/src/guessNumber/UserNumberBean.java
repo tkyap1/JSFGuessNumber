@@ -2,10 +2,13 @@ package guessNumber;
 
 import java.io.Serializable;
 import java.util.Random;
+
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
 
 @ManagedBean
+// @RequestScoped
 @SessionScoped
 public class UserNumberBean implements Serializable {
 	private static final long serialVersionUID = 5443351151396868724L;
@@ -17,8 +20,8 @@ public class UserNumberBean implements Serializable {
 
 	public UserNumberBean() {
 		Random randomGR = new Random();
-		randomInt = new Integer(randomGR.nextInt(10));
-		System.out.println("Duke’s number: " + randomInt);
+		randomInt = new Integer(randomGR.nextInt((int)maximum));
+		System.out.println("Duke's number: " + randomInt);
 	}
 
 	public void setUserNumber(Integer user_number) {
